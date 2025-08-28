@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 public class CreateEmployeeInput {
-    @NotBlank @Size(min = 2, message = "Name must be at least 2 characters")
+    @NotBlank @Size(min = 2, message = "must be at least 2 characters")
     private String name;
 
     @NotNull @Min(1)
@@ -19,6 +19,6 @@ public class CreateEmployeeInput {
     @Max(75)
     private Integer age;
 
-    @NotBlank @Size(min = 2, message = "Title must be at least 2 characters")
+    @NotBlank @Size(min = 2, message = "must be at least 2 characters")
     private String title;
 }
